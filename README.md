@@ -16,6 +16,8 @@ Parse and validate an aggregate report `.xml` file into an `AggregateReport` cla
 
 ```
 from dmarc_reports.classes import AggregateReport
+from dmarc_reports.exceptions import BadAggregateReport
+
 
 try:
     with open('aggregate-report.xml','r') as FILE:
